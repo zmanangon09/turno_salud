@@ -50,9 +50,8 @@ Los seis puestos del caso quedan cubiertos así: Matías y Andrea ocupan los dos
 
 
 ## 3.4 Esfuerzo y duración
-El esfuerzo representa la cantidad total de trabajo humano requerido para completar una tarea o proceso, expresado en horas-persona. La duración, en cambio, es el tiempo de calendario (días o semanas) que transcurre desde el inicio de una actividad hasta su finalización. En proyectos de ingeniería de software, el esfuerzo total no se traduce directamente en duración lineal cuando las tareas pueden ejecutarse en paralelo entre varios integrantes.
 
-El **esfuerzo** son las horas de trabajo que una tarea necesita, sin importar cuántas personas la hagan; se mide en horas-persona. La **duración** es el tiempo de calendario que pasa desde que la tarea empieza hasta que termina; se mide en semanas. Las dos se relacionan, pero no son lo mismo.
+El **esfuerzo** son las horas de trabajo que necesita una tarea, la haga una persona o tres. Se mide en horas-persona. La **duración** es cuánto tiempo de calendario pasa desde que la tarea empieza hasta que termina, y se mide en semanas. Están relacionadas, pero no son lo mismo: si dos personas trabajan en paralelo, el esfuerzo es el mismo y la duración baja.
 
 Ejemplo en TurnoSalud: supongamos que el módulo de agendamiento (reservar, reprogramar y cancelar sin cruces de horario) necesita 120 horas-persona. Si Matías lo construye solo, con unas 36 horas semanales para construcción, tarda algo más de 3 semanas (120 ÷ 36 ≈ 3,3). Si Matías hace el backend y Andrea las pantallas en paralelo, el mismo trabajo se termina en menos de 2 semanas (120 ÷ 72 ≈ 1,7). El esfuerzo sigue siendo 120 horas-persona y por tanto cuesta lo mismo; solo se acorta la duración. En la práctica se suman algunas horas de coordinación entre los dos, y no todo trabajo se puede repartir: una tarea que depende de otra no se acelera con más personas.
 
