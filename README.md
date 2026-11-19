@@ -17,12 +17,12 @@
 | Rol | Tarea | Producto de entrada | Producto de salida | Documento | Estado |
 |-----|-------|---------------------|--------------------|-----------|--------|
 | ET | Paso 1 · Elegir el perfil | Caso TurnoSalud | Perfil seleccionado y justificado | [Acta 01](actas/ACTA-01_2026-11-18_roles-y-perfil.md) · [Selección del perfil](01-seleccion-perfil/seleccion-perfil.md) | Terminado |
-| GP, LT | GP.1.1 Revisar el Enunciado del trabajo | Enunciado del trabajo | Enunciado del trabajo [revisado] | [Acta 02](actas/ACTA-02_2026-11-18_revision-enunciado-y-plan.md) · [Enunciado del trabajo](02-enunciado-trabajo/enunciado-trabajo.md) | En elaboración |
-| GP, CL | GP.1.2 Definir con el cliente las instrucciones de entrega | Enunciado del trabajo [revisado] | Plan del proyecto: instrucciones de entrega | [Enunciado, sección 2.6](02-enunciado-trabajo/enunciado-trabajo.md) | Pendiente |
-| GP, LT | GP.1.3 – GP.1.12 Elaborar el Plan del proyecto | Enunciado del trabajo [revisado] | Plan del proyecto | [Plan del proyecto](03-plan-proyecto/plan-proyecto.md) | Elaborado (por verificar) |
-| GP, LT | GP.1.13 Verificar el plan con el equipo | Plan del proyecto | Resultados de verificación · Plan [verificado] | [Resultados de verificación](03-plan-proyecto/resultados-verificacion-plan.md) | Pendiente |
-| GP, CL | GP.1.14 Revisar y aceptar el plan con el cliente | Plan del proyecto [verificado] | Registro de reunión · Plan [aceptado] | `actas/` | Pendiente |
-| GP, LT | GP.1.15 Establecer el repositorio del proyecto | Estrategia de control de versiones | Repositorio del proyecto | Este repositorio | En elaboración |
+| GP, LT | GP.1.1 Revisar el Enunciado del trabajo | Enunciado del trabajo | Enunciado del trabajo [revisado] | [Acta 02](actas/ACTA-02_2026-11-18_revision-enunciado-y-plan.md) · [Enunciado del trabajo](02-enunciado-trabajo/enunciado-trabajo.md) | Terminado |
+| GP, CL | GP.1.2 Definir con el cliente las instrucciones de entrega | Enunciado del trabajo [revisado] | Plan del proyecto: instrucciones de entrega | [Enunciado, sección 2.6](02-enunciado-trabajo/enunciado-trabajo.md) · [Acta 04](actas/ACTA-04_2026-11-20_aceptacion-plan-cliente.md) | Terminado |
+| GP, LT | GP.1.3 – GP.1.12 Elaborar el Plan del proyecto | Enunciado del trabajo [revisado] | Plan del proyecto | [Plan del proyecto](03-plan-proyecto/plan-proyecto.md) | Terminado |
+| GP, LT | GP.1.13 Verificar el plan con el equipo | Plan del proyecto | Resultados de verificación · Plan [verificado] | [Resultados de verificación](03-plan-proyecto/resultados-verificacion-plan.md) · [Acta 03](actas/ACTA-03_2026-11-19_verificacion-plan.md) | Terminado |
+| GP, CL | GP.1.14 Revisar y aceptar el plan con el cliente | Plan del proyecto [verificado] | Registro de reunión · Plan [aceptado] | [Acta 04](actas/ACTA-04_2026-11-20_aceptacion-plan-cliente.md) | Terminado |
+| GP, LT | GP.1.15 Establecer el repositorio del proyecto | Estrategia de control de versiones | Repositorio del proyecto | Este repositorio · [Plan, sección 3.15](03-plan-proyecto/plan-proyecto.md) | Terminado |
 
 ## Actas de reunión
 
@@ -30,6 +30,8 @@
 |-----|-------|------|
 | [01](actas/ACTA-01_2026-11-18_roles-y-perfil.md) | 2026-11-18 | Selección del perfil y asignación de roles |
 | [02](actas/ACTA-02_2026-11-18_revision-enunciado-y-plan.md) | 2026-11-18 | Revisión del Enunciado del trabajo y organización del Plan |
+| [03](actas/ACTA-03_2026-11-19_verificacion-plan.md) | 2026-11-19 | Verificación del Plan del proyecto con el equipo |
+| [04](actas/ACTA-04_2026-11-20_aceptacion-plan-cliente.md) | 2026-11-20 | Revisión y aceptación del Plan con el cliente |
 
 ## Estructura
 
