@@ -4,7 +4,7 @@
 **Responsables:** Zaith Manangón (GP) y Matías Lugmaña (LT) · **Apoyo:** Alexander Villacres (AN/DIS) y Andrea Raura (RP)
 **Tareas de la norma:** GP.1.3 a GP.1.15
 **Producto de entrada:** [Enunciado del trabajo revisado](../02-enunciado-trabajo/enunciado-trabajo.md)
-**Versión:** 1.0 · **Estado:** Elaborado, pendiente de verificación (Acta 03)
+**Versión:** 1.0 · **Estado:** Aceptado ([Acta 03](../actas/ACTA-03_2026-11-19_verificacion-plan.md) verificación · [Acta 04](../actas/ACTA-04_2026-11-20_aceptacion-plan-cliente.md) aceptación)
 
 ---
 
@@ -159,7 +159,7 @@ Orden y solapamientos:
 
 | Semana | Hito  | Cómo se comprueba |
 |--------|-------|-------------------|
-| 2  | **E1** Plan del proyecto aceptado y repositorio establecido | Resultados de verificación firmados (Acta 03) y acta de aceptación del CL (Acta 04) |
+| 2  | **E1** Plan del proyecto aceptado y repositorio establecido | Resultados de verificación firmados ([Acta 03](../actas/ACTA-03_2026-11-19_verificacion-plan.md)) y aceptación del CL ([Acta 04](../actas/ACTA-04_2026-11-20_aceptacion-plan-cliente.md)) |
 | 2  | Entorno de implementación listo | Repositorio de código, servidor de pruebas y base de datos funcionando; revisado por el LT |
 | 3  | **E2** Requisitos y prototipos validados | Acta de validación firmada por el CL |
 | 5  | **E3** Arquitectura y diseño verificados | Resultados de verificación del diseño y matriz de trazabilidad revisados por LT y GP |
@@ -294,7 +294,7 @@ El seguimiento no se hace en esta etapa: se ejecuta durante el proyecto en **GP.
 
 ## 3.17 Verificación y aceptación del plan (GP.1.13 y GP.1.14)
 
-- **Verificación con el equipo:** [Resultados de verificación](resultados-verificacion-plan.md), registrada en el Acta 03.
-- **Aceptación del cliente:** Acta N.° 04 (revisión del plan verificado con el CL).
+- **Verificación con el equipo:** [Resultados de verificación](resultados-verificacion-plan.md), registrada en el [Acta 03](../actas/ACTA-03_2026-11-19_verificacion-plan.md) (2026-11-19).
+- **Aceptación del cliente:** [Acta 04](../actas/ACTA-04_2026-11-20_aceptacion-plan-cliente.md) (2026-11-20). El CL aceptó la versión 1.0 sin cambios.
 
 **Productos de trabajo:** Plan del proyecto [verificado y aceptado], con las instrucciones de entrega de E1 a E5 incluidas · Resultados de verificación del plan · Registro de reunión (Actas 03 y 04) · Repositorio del proyecto establecido con la estrategia de control de versiones de 3.15.

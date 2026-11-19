@@ -55,7 +55,7 @@ Por último se compararon los cuatro perfiles progresivos de la estrategia del W
 
 | Perfil      | Para quién está pensado                                              | ¿Aplica a TurnoSalud?                                                          |
 |-------------|----------------------------------------------------------------------|---------------------------------------------------------------------------------|
-| Entrada     | Proyectos pequeños o emprendimientos que inician  | No.  y la VSE ya está constituida                |
+| Entrada     | Proyectos pequeños o emprendimientos que inician  | No. TurnoSalud requiere 18 personas-mes y la VSE ya está constituida |
 | **Básico**  | VSE que desarrolla un solo proyecto a la vez                         | **Sí.** Un solo equipo de 6 personas, 18 personas-mes y un único proyecto en el periodo |
 | Intermedio  | Varios proyectos en paralelo en el contexto de la organización       | No. No hay otros proyectos en paralelo                                           |
 | Avanzado    | VSE que quiere sostenerse y crecer como empresa independiente y competitiva | No. El caso no plantea objetivos de crecimiento empresarial                |
