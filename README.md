@@ -16,7 +16,7 @@
 
 | Rol | Tarea | Producto de entrada | Producto de salida | Documento | Estado |
 |-----|-------|---------------------|--------------------|-----------|--------|
-| ET | Paso 1 · Elegir el perfil | Caso TurnoSalud | Perfil seleccionado y justificado | [Acta 01](actas/ACTA-01_2026-11-18_roles-y-perfil.md) · [Selección del perfil](01-seleccion-perfil/seleccion-perfil.md) | En elaboración |
+| ET | Paso 1 · Elegir el perfil | Caso TurnoSalud | Perfil seleccionado y justificado | [Acta 01](actas/ACTA-01_2026-11-18_roles-y-perfil.md) · [Selección del perfil](01-seleccion-perfil/seleccion-perfil.md) | Terminado |
 | GP, LT | GP.1.1 Revisar el Enunciado del trabajo | Enunciado del trabajo | Enunciado del trabajo [revisado] | [Acta 02](actas/ACTA-02_2026-11-18_revision-enunciado-y-plan.md) · [Enunciado del trabajo](02-enunciado-trabajo/enunciado-trabajo.md) | En elaboración |
 | GP, CL | GP.1.2 Definir con el cliente las instrucciones de entrega | Enunciado del trabajo [revisado] | Plan del proyecto: instrucciones de entrega | [Enunciado, sección 2.6](02-enunciado-trabajo/enunciado-trabajo.md) | Pendiente |
 | GP, LT | GP.1.3 – GP.1.12 Elaborar el Plan del proyecto | Enunciado del trabajo [revisado] | Plan del proyecto | [Plan del proyecto](03-plan-proyecto/plan-proyecto.md) | Pendiente |
