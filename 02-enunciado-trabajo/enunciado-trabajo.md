@@ -3,8 +3,8 @@
 **Proyecto:** TurnoSalud · **Grupo 6**
 **Responsables:** Zaith Manangón (GP) y Matías Lugmaña (LT) · **Apoyo:** Alexander Villacres (AN/DIS) y Andrea Raura (RP)
 **Tareas de la norma:** GP.1.1 Revisar el Enunciado del trabajo · GP.1.2 Definir con el cliente las instrucciones de entrega
-**Registro:** [Acta 02](../actas/ACTA-02_2026-11-18_revision-enunciado-y-plan.md)
-**Versión:** 1.0 · **Estado:** Revisado
+**Registro:** [Acta 02](../actas/ACTA-02_2026-11-18_revision-enunciado-y-plan.md) (revisión) · [Acta 04](../actas/ACTA-04_2026-11-20_aceptacion-plan-cliente.md) (instrucciones de entrega acordadas con el CL)
+**Versión:** 1.1 · **Estado:** Revisado
 
 ---
 
@@ -80,7 +80,19 @@ Desarrollar y poner en marcha la aplicación web **TurnoSalud** para una clínic
 | Tiempo de carga de disponibilidad de horarios y confirmación de turno inferior a 3 segundos en condiciones normales de operación *(supuesto)*. | Pruebas de respuesta en el entorno de preproducción previas a la entrega final *(supuesto)*. |
 | Entrega completa de la configuración de software (código fuente, manual de usuario y guía de mantenimiento) *(supuesto)*. | Lista de verificación de entrega (IS.6) revisada por GP y LT, y firma del Acta de aceptación por el Cliente (CL) (GP.4) *(supuesto)*. |
 
+## 2.9 Supuestos técnicos
 
+Propuestos por Matías Lugmaña (LT). Quedan como supuestos hasta que el cliente los confirme.
+
+| Tema | Supuesto |
+|------|----------|
+| **Arquitectura** | Aplicación web cliente-servidor: frontend en Next.js, backend con una API REST en NestJS y base de datos relacional PostgreSQL *(supuesto)*. |
+| **Navegadores y dispositivos** | Últimas dos versiones de Chrome, Edge, Firefox y Safari, en escritorio y móvil, con interfaz responsiva; no se instala nada en los equipos de la clínica *(supuesto)*. |
+| **Alojamiento** | Un servidor en la nube para pruebas (staging) y otro para producción. Después del primer mes de operación, la clínica contrata el alojamiento a su nombre *(supuesto)*. |
+| **Correo electrónico** | Las confirmaciones y los recordatorios se envían mediante un servicio de correo transaccional SMTP con SPF y DKIM configurados *(supuesto)*. |
+| **Datos que se guardan** | Solo datos de identificación y contacto del paciente y datos del turno; no se guarda información clínica, porque la historia clínica está fuera del alcance *(supuesto)*. |
+| **Protección de datos** | HTTPS en todo el sistema, contraseñas guardadas con hash, acceso según el rol del usuario y respaldos cifrados, conforme a la Ley Orgánica de Protección de Datos Personales del Ecuador *(supuesto)*. |
+| **Zona horaria e idioma** | Horarios en la zona horaria de Ecuador continental (UTC-5) e interfaz en español *(supuesto)*. |
 
 **Restricciones:**
 
@@ -91,5 +103,5 @@ Desarrollar y poner en marcha la aplicación web **TurnoSalud** para una clínic
 
 **Productos de trabajo:**
 - **Enunciado del trabajo [revisado]** (salida de la tarea GP.1.1, elaborado por GP y LT).
-- **Plan del proyecto: instrucciones de entrega** (salida de la tarea GP.1.2, definida en la sección 2.6 para acuerdo con el CL).
+- **Plan del proyecto: instrucciones de entrega** (salida de la tarea GP.1.2, definida en la sección 2.6 y acordada con el CL en el [Acta 04](../actas/ACTA-04_2026-11-20_aceptacion-plan-cliente.md)).
 - **Registro de reunión** ([Acta 02](../actas/ACTA-02_2026-11-18_revision-enunciado-y-plan.md), donde consta la revisión y los vacíos detectados).
