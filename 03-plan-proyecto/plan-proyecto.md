@@ -51,6 +51,7 @@ Las tareas marcadas con ✔ son revisiones, verificaciones o validaciones.
 | GP.2 a GP.4 Seguimiento y cierre     | Reuniones semanales del equipo y quincenales con el CL · registrar el estado del progreso · ✔ analizar y aprobar solicitudes de cambio · tomar acciones correctivas (GP.3) · respaldar el repositorio · ✔ formalizar la aceptación del producto con el CL (GP.4) | Registro de estado del progreso · Solicitudes de cambio · Actas de reunión · Acta de aceptación |
 
 ## 3.4 Esfuerzo y duración
+El esfuerzo representa la cantidad total de trabajo humano requerido para completar una tarea o proceso, expresado en horas-persona. La duración, en cambio, es el tiempo de calendario (días o semanas) que transcurre desde el inicio de una actividad hasta su finalización. En proyectos de ingeniería de software, el esfuerzo total no se traduce directamente en duración lineal cuando las tareas pueden ejecutarse en paralelo entre varios integrantes.
 
 El **esfuerzo** son las horas de trabajo que una tarea necesita, sin importar cuántas personas la hagan; se mide en horas-persona. La **duración** es el tiempo de calendario que pasa desde que la tarea empieza hasta que termina; se mide en semanas. Las dos se relacionan, pero no son lo mismo.
 
@@ -59,7 +60,6 @@ Ejemplo en TurnoSalud: supongamos que el módulo de agendamiento (reservar, repr
 Por eso el plan estima primero el esfuerzo (3.5), luego lo reparte entre las personas (3.6) y recién con eso arma el calendario (3.8).
 
 ## 3.5 Estimación del esfuerzo con PERT (GP.1.4)
-
 **E = (O + 4M + P) ÷ 6**
 
 - **O (optimista):** horas si todo sale bien, sin retrabajo ni dudas del cliente.
@@ -189,7 +189,6 @@ Orden y solapamientos:
 | BrowserStack Live | Herramienta (con costo) | Pruebas multinavegador, incluido Safari en iOS y macOS | 10 |
 
 ## 3.10 Costo del trabajo por rol (GP.1.8)
-
 **Costo de un rol = horas del rol × tarifa del rol**
 
 Las horas salen de 3.6: las horas de construcción (IS.4) de Matías y Andrea se pagan como PR y el resto de sus horas como LT y RP. Las tarifas son supuestos académicos: un sueldo mensual de referencia del mercado ecuatoriano para perfiles junior y semi-senior, más aportes patronales, dividido para 160 horas al mes, y redondeado.
@@ -206,7 +205,6 @@ Las horas salen de 3.6: las horas de construcción (IS.4) de Matías y Andrea se
 **Ejemplo desarrollado (PR):** las horas de programador son las de construcción de Matías (160 h) más las de Andrea (124 h): 160 + 124 = 284 h. Luego 284 h × USD 11/h = **USD 3 124**. Las otras 192 h de Matías (352 − 160) se cobran como LT y las otras 177 h de Andrea (301 − 124) como RP.
 
 ## 3.11 Servicios y herramientas
-
 **Costo = cantidad × costo unitario**
 
 Los precios son supuestos hasta tener cotizaciones. Las herramientas gratuitas de 3.9 no aparecen aquí.
@@ -226,7 +224,6 @@ Los precios son supuestos hasta tener cotizaciones. Las herramientas gratuitas d
 El servidor de producción cubre desde S9 hasta la entrega y el primer mes de operación, mientras la clínica contrata su propio plan.
 
 ## 3.12 Reserva para contingencias
-
 **Aporte a la reserva = probabilidad × impacto económico**
 
 Solo se incluyen los riesgos de 3.14 que pueden costar dinero. El impacto es el trabajo o el gasto adicional que habría que pagar si el riesgo ocurre; no incluye horas que ya están en el presupuesto normal.
@@ -244,7 +241,6 @@ Solo se incluyen los riesgos de 3.14 que pueden costar dinero. El impacto es el 
 La reserva la administra el GP y solo se usa con una solicitud de cambio o una acción correctiva registrada en acta.
 
 ## 3.13 Presupuesto total
-
 **Presupuesto = trabajo + servicios + reserva**
 
 | Concepto                        | Importe (USD) |
