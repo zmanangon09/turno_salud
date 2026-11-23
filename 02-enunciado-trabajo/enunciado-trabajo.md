@@ -4,7 +4,7 @@
 **Responsables:** Zaith Manangón (GP) y Matías Lugmaña (LT) · **Apoyo:** Alexander Villacres (AN/DIS) y Andrea Raura (RP)
 **Tareas de la norma:** GP.1.1 Revisar el Enunciado del trabajo · GP.1.2 Definir con el cliente las instrucciones de entrega
 **Registro:** [Acta 02](../actas/ACTA-02_2026-11-18_revision-enunciado-y-plan.md) (revisión) · [Acta 04](../actas/ACTA-04_2026-11-20_aceptacion-plan-cliente.md) (instrucciones de entrega acordadas con el CL)
-**Versión:** 1.1 · **Estado:** Revisado
+**Versión:** 1.2 · **Estado:** Revisado · Cambio de alcance aprobado: [SC-01](../05-solicitudes-cambio/SC-01_lista-de-espera.md) ([Acta 07](../actas/ACTA-07_2026-11-23_solicitudes-cambio.md))
 
 ---
 
@@ -52,6 +52,9 @@ Desarrollar y poner en marcha la aplicación web **TurnoSalud** para una clínic
 | Agendamiento, reprogramación y cancelación de turnos con validación automática para evitar cruces de horario *(supuesto)*. | Aplicaciones móviles nativas (Android / iOS); se cubre el acceso móvil mediante una interfaz web responsiva *(supuesto)*. |
 | Envío automático de notificaciones y recordatorios por correo electrónico al confirmar, cambiar o cancelar un turno *(supuesto)*. | Notificaciones por SMS o API comercial de WhatsApp, para evitar costos recurrentes no contemplados en el presupuesto *(supuesto)*. |
 | Panel de recepción y vista administrativa con resumen de citas programadas, atendidas y canceladas *(supuesto)*. | Módulo de telemedicina o videoconsultas integradas, ya que la clínica requiere gestionar la atención presencial *(supuesto)*. |
+| **(v1.2, SC-01)** Lista de espera por especialidad y fecha, con aviso por correo cuando se libera un turno. | |
+
+La solicitud de recordatorios por WhatsApp ([SC-02](../05-solicitudes-cambio/SC-02_notificaciones-whatsapp.md)) fue rechazada: la exclusión de SMS y WhatsApp se mantiene.
 
 ## 2.6 Entregables e instrucciones de entrega (GP.1.2)
 
