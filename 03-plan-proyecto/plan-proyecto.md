@@ -4,7 +4,9 @@
 **Responsables:** Zaith Manangón (GP) y Matías Lugmaña (LT) · **Apoyo:** Alexander Villacres (AN/DIS) y Andrea Raura (RP)
 **Tareas de la norma:** GP.1.3 a GP.1.15
 **Producto de entrada:** [Enunciado del trabajo revisado](../02-enunciado-trabajo/enunciado-trabajo.md)
-**Versión:** 1.0 · **Estado:** Aceptado ([Acta 03](../actas/ACTA-03_2026-11-19_verificacion-plan.md) verificación · [Acta 04](../actas/ACTA-04_2026-11-20_aceptacion-plan-cliente.md) aceptación)
+**Versión:** 1.1 · **Estado:** Aceptado ([Acta 03](../actas/ACTA-03_2026-11-19_verificacion-plan.md) verificación · [Acta 04](../actas/ACTA-04_2026-11-20_aceptacion-plan-cliente.md) aceptación de v1.0 · [Acta 07](../actas/ACTA-07_2026-11-23_solicitudes-cambio.md) aceptación de v1.1)
+
+> **Versión 1.1:** las secciones 3.1 a 3.17 conservan la línea base v1.0. Los cambios por la solicitud SC-01 están en la sección [3.18](#318-control-de-cambios-del-plan); donde una cifra cambió, manda la 3.18.
 
 ---
 
@@ -292,3 +294,58 @@ El seguimiento no se hace en esta etapa: se ejecuta durante el proyecto en **GP.
 - **Aceptación del cliente:** [Acta 04](../actas/ACTA-04_2026-11-20_aceptacion-plan-cliente.md) (2026-11-20). El CL aceptó la versión 1.0 sin cambios.
 
 **Productos de trabajo:** Plan del proyecto [verificado y aceptado], con las instrucciones de entrega de E1 a E5 incluidas · Resultados de verificación del plan · Registro de reunión (Actas 03 y 04) · Repositorio del proyecto establecido con la estrategia de control de versiones de 3.15.
+
+## 3.18 Control de cambios del plan
+
+| Versión | Semana | Cambio | Aprobó |
+|---------|--------|--------|--------|
+| 1.0 | S2 | Línea base del proyecto | CL ([Acta 04](../actas/ACTA-04_2026-11-20_aceptacion-plan-cliente.md)) |
+| 1.1 | S5 | Solicitud de cambio [SC-01](../05-solicitudes-cambio/SC-01_lista-de-espera.md), lista de espera: +54 h y USD 647 tomados de la reserva | CL ([Acta 07](../actas/ACTA-07_2026-11-23_solicitudes-cambio.md)) |
+
+La solicitud [SC-02](../05-solicitudes-cambio/SC-02_notificaciones-whatsapp.md) (WhatsApp) fue rechazada y no cambia el plan. El detalle de cada solicitud está en el [Registro de solicitudes de cambio](../05-solicitudes-cambio/registro-solicitudes-cambio.md).
+
+**Esfuerzo (reemplaza los totales de 3.5 y 3.6):**
+
+| Proceso | v1.0 | SC-01 | v1.1 |
+|---------|------|-------|------|
+| GP.1 Planificación | 54 | 0 | 54 |
+| IS.1 Inicio de la implementación | 20 | 0 | 20 |
+| IS.2 Análisis de requisitos | 126 | +8 | 134 |
+| IS.3 Arquitectura y diseño detallado | 150 | +8 | 158 |
+| IS.4 Construcción | 438 | +24 | 462 |
+| IS.5 Integración y pruebas | 202 | +8 | 210 |
+| IS.6 Entrega del producto | 50 | +2 | 52 |
+| GP.2 a GP.4 Seguimiento y cierre | 108 | +4 | 112 |
+| **Total** | **1 148** | **+54** | **1 202** |
+
+| Integrante | v1.0 | SC-01 | v1.1 | Utilización (sobre 480 h) |
+|------------|------|-------|------|---------------------------|
+| Zaith      | 176 | +5 | 181 | 37,7 % |
+| Matías     | 352 | +21 | 373 | 77,7 % |
+| Alexander  | 319 | +12 | 331 | 69,0 % |
+| Andrea     | 301 | +16 | 317 | 66,0 % |
+| **Total**  | **1 148** | **+54** | **1 202** | **62,6 %** |
+
+**Carga semanal (reemplaza la tabla de 3.7 desde S5):**
+
+| Integrante | S5 | S6 | S7 | S8 | S9 | S10 | S11 | S12 |
+|------------|----|----|----|----|----|-----|-----|-----|
+| Zaith      | 14 | 11 | 8 | 8 | 12 | 18 | 24 | 18 |
+| Matías     | 37 | 40 | 40 | 40 | 38 | 36 | 32 | 16 |
+| Alexander  | 36 | 40 | 38 | 32 | 32 | 26 | 14 | 8 |
+| Andrea     | 22 | 34 | 38 | 40 | 40 | 40 | 38 | 10 |
+
+Nadie pasa de 40 h, pero la holgura de 3.7 desaparece para Matías de S6 a S8 y para Andrea de S8 a S10. Por eso el riesgo R4 pasa de media a **alta** y el GP compara horas reales contra plan cada lunes.
+
+**Calendario:** sin cambios en los hitos de 3.8. El diseño (E3) se actualiza a v1.1 en S7.
+
+**Presupuesto (reemplaza 3.13):**
+
+| Concepto | v1.0 (USD) | SC-01 | v1.1 (USD) |
+|----------|------------|-------|------------|
+| Trabajo del equipo | 14 227 | + 647 | 14 874 |
+| Servicios y herramientas | 547 | 0 | 547 |
+| Reserva para contingencias | 2 270 | − 647 | 1 623 |
+| **Total** | **17 044** | **0** | **17 044** |
+| Presupuesto máximo | 18 000 | | 18 000 |
+| Margen | 956 | | 956 (5,3 %) |

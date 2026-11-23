@@ -5,7 +5,7 @@
 **Tareas de la norma:** IS.2.1 Asignar tareas · IS.2.2 Documentar la Especificación de requisitos · IS.2.3 Verificarla · IS.2.4 Validarla con el cliente · IS.2.7 Incorporarla a la configuración de software
 **Productos de entrada:** [Enunciado del trabajo revisado](../02-enunciado-trabajo/enunciado-trabajo.md) · [Plan del proyecto aceptado](../03-plan-proyecto/plan-proyecto.md)
 **Semana del proyecto:** S2 y S3 · **Entregable:** E2
-**Versión:** 1.0 · **Estado:** Validado ([Verificación](resultados-verificacion-requisitos.md) · [Validación](resultados-validacion-requisitos.md))
+**Versión:** 1.1 · **Estado:** Validado ([Verificación](resultados-verificacion-requisitos.md) · [Validación](resultados-validacion-requisitos.md)) · Cambio aprobado: [SC-01](../05-solicitudes-cambio/SC-01_lista-de-espera.md)
 
 ---
 
@@ -22,6 +22,7 @@ Las tareas IS.2.5 e IS.2.6 (versión preliminar del manual de usuario) no se hac
 | Enunciado del trabajo revisado (2.4, 2.5, 2.8 y 2.9) | Usuarios, alcance incluido y excluido, criterios de aceptación y supuestos técnicos confirmados por el CL en el [Acta 04](../actas/ACTA-04_2026-11-20_aceptacion-plan-cliente.md). |
 | Taller interno de elucidación (S2) | Recorrido de un día de trabajo de cada usuario (paciente, recepción, médico, administrador) para encontrar las funciones que el enunciado no detallaba. |
 | Revisión de prototipos con el CL ([Acta 06](../actas/ACTA-06_2026-11-23_validacion-requisitos.md)) | Reglas de negocio que solo podía definir la clínica: plazo para cancelar, pacientes sin correo y filtros del reporte. |
+| Solicitud de cambio SC-01 ([Acta 07](../actas/ACTA-07_2026-11-23_solicitudes-cambio.md)) | Lista de espera (RF-19, RN-08), agregada en la versión 1.1. |
 
 ## 4.3 Usuarios y permisos
 
@@ -29,6 +30,7 @@ Las tareas IS.2.5 e IS.2.6 (versión preliminar del manual de usuario) no se hac
 |---------|:--------:|:---------:|:------:|:-------------:|
 | Registrarse e iniciar sesión | ✓ | ✓ | ✓ | ✓ |
 | Consultar disponibilidad y reservar | ✓ | ✓ (a nombre del paciente) | | |
+| Anotarse en la lista de espera (v1.1) | ✓ | ✓ (a nombre del paciente) | | |
 | Reprogramar y cancelar | ✓ (hasta 4 h antes) | ✓ (hasta la hora del turno) | | |
 | Ver agenda del día y registrar llegada | | ✓ | | |
 | Ver su agenda y marcar atendido / no asistió | | | ✓ | |
@@ -60,6 +62,7 @@ Prioridad: **Alta** = sin esto no se acepta el producto · **Media** = se entreg
 | RF-16 | Gestión de cuentas internas (recepción, médico, administrador): crear, desactivar y restablecer contraseña. | Administrador | Alta | Una cuenta desactivada no puede iniciar sesión. |
 | RF-17 | Reporte de turnos por rango de fechas, especialidad y médico: reservados, atendidos, cancelados y no asistió. | Administrador | Media | Los totales del reporte coinciden con los turnos de la base de datos para el mismo filtro. |
 | RF-18 | «Mis turnos»: el paciente ve sus próximos turnos y su historial. | Paciente | Media | Desde esta pantalla puede reprogramar o cancelar los turnos que cumplan RN-03. |
+| RF-19 | **Lista de espera (SC-01, v1.1).** Si no hay horarios libres en la especialidad y fecha buscadas, el paciente puede anotarse; cuando se cancela o reprograma un turno de esa especialidad y fecha, el sistema avisa por correo a los pacientes anotados. | Paciente, Recepción | Media | El aviso sale en menos de 5 minutos después de liberarse el bloque, en el orden de inscripción; el bloque se asigna al primero que reserva (RN-08). |
 
 ## 4.5 Reglas de negocio
 
@@ -72,6 +75,7 @@ Prioridad: **Alta** = sin esto no se acepta el producto · **Media** = se entreg
 | RN-05 | Si el paciente no llega 15 minutos después de la hora del turno, el médico o recepción pueden marcarlo como «no asistió». |
 | RN-06 | Un paciente registrado por recepción sin correo no recibe notificaciones; recepción le entrega los datos del turno en el momento. |
 | RN-07 | Todas las horas se manejan en la zona horaria de Ecuador continental (UTC-5). |
+| RN-08 | **(SC-01)** Un paciente puede estar en la lista de espera de una sola fecha por especialidad. Su inscripción se borra cuando reserva un turno de esa especialidad o cuando pasa la fecha. El aviso no aparta el turno: lo obtiene quien reserve primero. |
 
 ## 4.6 Requisitos no funcionales
 
@@ -100,6 +104,7 @@ Prototipos de baja fidelidad hechos por Alexander (DIS) y recorridos con el CL e
 | P-07 | Agenda del médico | RF-15 |
 | P-08 | Administración de especialidades, médicos, consultorios, horarios y cuentas | RF-04, RF-05, RF-06, RF-16 |
 | P-09 | Reporte de turnos | RF-17 |
+| P-10 | Anotarse en la lista de espera (desde P-03 cuando no hay horarios) — v1.1 | RF-19 |
 
 **Flujo de reserva (RF-08, RNF-01):**
 
@@ -125,6 +130,7 @@ Los casos de prueba (CP) se diseñan en IS.5; aquí se reserva su identificador 
 | RF-15 | Panel de recepción y médicos | P-07 | 1 | CP-15 |
 | RF-16, RF-17 | Vista administrativa | P-08, P-09 | 1 | CP-16, CP-17 |
 | RF-18 | Agendamiento (paciente) | P-05 | 1 | CP-18 |
+| RF-19 | Lista de espera (SC-01, Enunciado v1.2) | P-10 | 1 | CP-25 y regresión de CP-10 a CP-12 |
 | RNF-01 | — | P-02 a P-04 | 3 | CP-19 |
 | RNF-02 | — | — | 5 | CP-20 |
 | RNF-03 | — | Todas | 4 | CP-21 |
@@ -134,7 +140,7 @@ El criterio 6 (entrega de la configuración de software) no sale de un requisito
 
 ## 4.9 Fuera de alcance
 
-Se mantiene lo excluido en la sección 2.5 del Enunciado: historia clínica, pagos en línea y facturación electrónica, apps móviles nativas, notificaciones por SMS o WhatsApp y telemedicina. Cualquier función nueva después de esta validación se tramita como solicitud de cambio (riesgo R1 del plan).
+Se mantiene lo excluido en la sección 2.5 del Enunciado: historia clínica, pagos en línea y facturación electrónica, apps móviles nativas, notificaciones por SMS o WhatsApp y telemedicina. La solicitud de recordatorios por WhatsApp ([SC-02](../05-solicitudes-cambio/SC-02_notificaciones-whatsapp.md)) fue rechazada para esta versión. Cualquier función nueva después de esta validación se tramita como solicitud de cambio (riesgo R1 del plan).
 
 ## Historial de versiones
 
@@ -143,5 +149,6 @@ Se mantiene lo excluido en la sección 2.5 del Enunciado: historia clínica, pag
 | 0.1 | S2 | Primer borrador después del taller de elucidación | Alexander (AN) |
 | 0.2 | S3 | Siete correcciones de la verificación interna (IS.2.3) | Equipo ([Acta 05](../actas/ACTA-05_2026-11-23_verificacion-requisitos.md)) |
 | 1.0 | S3 | Cuatro correcciones de la validación con el cliente (IS.2.4) | CL ([Acta 06](../actas/ACTA-06_2026-11-23_validacion-requisitos.md)) |
+| 1.1 | S6 | SC-01: RF-19, RN-08, P-10 y trazabilidad a CP-25; revalidado con el CL | CL ([Acta 07](../actas/ACTA-07_2026-11-23_solicitudes-cambio.md)) |
 
-**Productos de trabajo:** Especificación de requisitos [verificada y validada] · Resultados de verificación · Resultados de validación · Registro de reunión (Actas 05 y 06). La versión 1.0 queda en la configuración de software con la etiqueta `E2-v1.0` (IS.2.7).
+**Productos de trabajo:** Especificación de requisitos [verificada y validada] · Resultados de verificación · Resultados de validación · Registro de reunión (Actas 05 y 06). La versión 1.0 quedó en la configuración de software con la etiqueta `E2-v1.0` (IS.2.7); la versión 1.1, con `E2-v1.1`.

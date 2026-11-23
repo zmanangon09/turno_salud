@@ -61,7 +61,7 @@ Resumen de lo discutido: Zaith (GP) recordó que en S2 se revisó el plan con to
 
 ### Punto 3: Verificación de la Especificación de requisitos
 
-Resumen de lo discutido: Alexander presentó la versión 0.1 (18 requisitos funcionales, 7 reglas de negocio, 7 no funcionales y 9 prototipos). El equipo aplicó la lista de verificación y encontró siete observaciones: requisitos sin medida (RF-08, RF-12, RNF-04), cruces por consultorio y reservas simultáneas (RF-09), turnos afectados por ausencias (RF-06), vencimiento del enlace de recuperación (RF-02) y una exportación a Excel que no estaba en el alcance (RF-17). Alexander las corrigió durante la reunión y en la tarde, y el equipo revisó la versión 0.2. Detalle en [Resultados de verificación](../04-requisitos/resultados-verificacion-requisitos.md).
+Resumen de lo discutido: Alexander presentó la versión 0.1 (18 requisitos funcionales, 5 reglas de negocio, 7 no funcionales y 9 prototipos). El equipo aplicó la lista de verificación y encontró siete observaciones: requisitos sin medida (RF-08, RF-12, RNF-04), cruces por consultorio y reservas simultáneas (RF-09), turnos afectados por ausencias (RF-06), vencimiento del enlace de recuperación (RF-02) y una exportación a Excel que no estaba en el alcance (RF-17). Alexander las corrigió durante la reunión y en la tarde, y el equipo revisó la versión 0.2. Detalle en [Resultados de verificación](../04-requisitos/resultados-verificacion-requisitos.md).
 
 ### Punto 4: Preparación de la validación
 
